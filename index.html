@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Filter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        select, button {
+          text-align: center;
+            margin: 12px 0;
+            padding: 12px;
+            font-size: 16px;
+            background-color: antiquewhite;
+        }
+        #details {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: antiquewhite
+        }
+    </style>
+</head>
+<body>
+    <h1>Mobile Brand and Model Filter</h1>
+    <label for="brandDropdown">Select Brand:</label>
+    <select id="brandDropdown" onchange="populateModels()"></select>
+
+    <label for="modelDropdown">Select Model:</label>
+    <select id="modelDropdown"></select>
+
+    <button onclick="displayDetails()">Search</button>
+
+    <div id="details">
+        <p>Please select a brand and model to view details.</p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
